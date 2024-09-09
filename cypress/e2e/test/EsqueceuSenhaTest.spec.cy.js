@@ -7,7 +7,7 @@ describe("esqueceuSenha", () =>{
         cy.esqueceuSenhaComSucesso();
     })
 
-    it("CT001 - Validar esqueceu senha com sucesso", () =>{
+    it("CT002 - Validar esqueceu senha com Campo Vazio", () =>{
         cy.esqueceuSenhaCampoVazio();
     })
 })

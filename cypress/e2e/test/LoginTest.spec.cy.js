@@ -3,10 +3,9 @@ describe("Login", () => {
     beforeEach(() => {
         cy.visit('/')
     })
-    it.only("CT001 - Validar login com sucesso", () => {
+    it("CT001 - Validar login com sucesso", () => {
         cy.geradorUsuarioAdmin()
-        cy.fixture("usuarioAdmin").then(( usuarioValido ) => {
-            cy.log(usuarioValido.userName)
+        cy.fixture("usuarioAdmin").then(({usuarioValido}) => {
             cy.login(usuarioValido)
         })
         
