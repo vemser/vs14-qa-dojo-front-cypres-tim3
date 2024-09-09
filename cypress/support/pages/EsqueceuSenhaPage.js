@@ -4,7 +4,7 @@ const campoUserName = ".oxd-input";
 const msgSucesso = "h6";
 const msgRequired = ".oxd-input-group span";
 
-Cypress.Commands.add("login", () => {
+Cypress.Commands.add("esqueceuSenhaComSucesso", () => {
     cy.clicar(btnFgtPassword)
     cy.preencherCampo(campoUserName, "Admin")
     cy.clicar(btnFgtPasswordConfirm)
