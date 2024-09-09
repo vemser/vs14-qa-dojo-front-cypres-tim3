@@ -7,5 +7,5 @@ Cypress.Commands.add("clicar", (elemento) => {
 });
 
 Cypress.Commands.add("validarTexto", (seletor, texto) => {
-    cy.get(elemento).contains(texto);
+    cy.get(seletor).contains(texto);
 });

@@ -12,6 +12,8 @@ Cypress.Commands.add("login", () => {
 
 Cypress.Commands.add("loginCamposVazios", () => {
     cy.clicar(btnLogin);
+    cy.validarTexto(userNameObrigatorio, "Required")
+    cy.validarTexto(passwordObrigatorio, "Required")
     
 });
 
