@@ -1,4 +1,4 @@
-describe("esqueceuSenha"), () =>{
+describe("esqueceuSenha", () =>{
     beforeEach(() => {
         cy.visit('/')
     })
@@ -6,4 +6,8 @@ describe("esqueceuSenha"), () =>{
     it("CT001 - Validar esqueceu senha com sucesso", () =>{
         cy.esqueceuSenhaComSucesso();
     })
-}
+
+    it("CT001 - Validar esqueceu senha com sucesso", () =>{
+        cy.esqueceuSenhaCampoVazio();
+    })
+})
